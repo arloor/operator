@@ -8,8 +8,8 @@ import com.arloor.operator.gateway.model.RegisterInfo;
  * 1.接收inline的register
  * 2.向inline索要connection
  */
-public interface GatewayHost {
+public interface Host {
     void register(RegisterInfo registerInfo);
 
-    Peer fetchPeer();
+    Peer fetchPeer(String domain,String id);
 }
